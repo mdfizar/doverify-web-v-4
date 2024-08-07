@@ -1,0 +1,75 @@
+/* exta smal screen  */
+@media (min-width: 100px) and (max-width: 430px) {
+  /* header  */
+  .header-container {
+    top: 0px;
+    border-radius: 0px;
+  }
+  /* bannar  */
+  .bannarslider img {
+    height: 35vh;
+  }
+  .swiper-container::before {
+    left: 125px;
+    top: -16%;
+    width: 180px;
+    height: 180px;
+  }
+  .slide-item{
+    width: 100px;
+  }
+  .swiper-container .swiper-button-prev {
+    left: 0px !important;
+  }
+  .swiper-container .swiper-button-next {
+    right: 0px !important;
+  }
+  #overview {
+    margin-top: 0px;
+  }
+  .features .swiper-pagination{
+    bottom: 0px;
+  }
+  /* begin golobal */
+  .section-heading  {
+    font-size: 35px;
+  }
+  .section-title {
+    font-size: 25px;
+  }
+  .center-text {
+    text-align: center;
+  }
+.margin-auto {
+  margin: auto;
+}
+  /* end golobal */
+}
+/* mobaile  */
+@media (min-width: 431px) and (max-width: 766px) {
+    .swiper-container::before {
+      content: '';
+      position: absolute;
+      left: 31%;
+      height: 205px;
+      width: 205px;
+    }
+    .slide-item {
+      width: 100px;
+    }
+    .swiper-button-prev {
+      left: -5px !important;
+    }
+    .swiper-button-next {
+      right: -5px !important;
+    }
+    #overview {
+      margin-top: 0px;
+    }
+}
+/* tablate  */
+@media (min-width: 766px) and (max-width: 991px) {
+  .swiper-container::before {
+    left: 36%;
+  }
+}
