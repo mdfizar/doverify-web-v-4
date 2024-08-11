@@ -11,6 +11,19 @@ var swiper = new Swiper(".bannarslider", {
   },
 });
 
+// event-news slider 
+var swiper = new Swiper(".event-news-slider", {
+  centeredSlides: true,
+  slidesPerView: 1,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 // service slider ==========
 var swiper = new Swiper(".mySwiper", {
   loop: true,
