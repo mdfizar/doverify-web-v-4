@@ -1,10 +1,9 @@
 /* ======GLOBAL CSS ======= */
 :root {
-  --bas-color:#2361a9;
+  --bas-color:#ff0000;
   --textcolor:#293a4e;
   --pragraph-fontSize: 18px;
-  --bas-color-img: #07b1d0;
-  --fontFamily: "Poppins";
+  --fontFamily: roboto, arial;
   --description-text: 17px;
 }
 body {
@@ -13,6 +12,8 @@ body {
   font-family: var(--fontFamily);
   font-style: normal;
   background-color: #fff9f9;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 /*read more button desing ====== */
 .read-more-btn {
@@ -30,7 +31,7 @@ body {
   gap: 30px;
 }
 .learn {
-  background-color: #ff0000;
+  background-color: var(--bas-color);
   color: #ffffffff;
   border-radius: 7px;
   padding: 17px 13px;
@@ -42,7 +43,7 @@ body {
 .btn-orange {
   text-decoration: none;
   text-align: center;
-  background-color: #ff0000;
+  background-color: var(--bas-color);
   color: #fff;
   border: none;
   border-radius: 10px;
@@ -123,10 +124,10 @@ header {
   font-family: var(--fontFamily);
 }
 .navbar-nav li a:hover {
-  color: red !important;
+  color: var(--bas-color) !important;
 }
 .accordion {
-  --bs-accordion-active-color: #ff0000;
+  --bs-accordion-active-color:var(--bas-color);
   --bs-accordion-active-bg: '';
 }
 /* ======= dropwdown ======== */
@@ -171,7 +172,7 @@ header {
   color: black;
 }
 .Dropdown-item ul li a:focus {
-  color: red;
+  color: var(--bas-color);
 }
 /*  ======= serveice dropdown ======== */
 .product-dropdown {
@@ -212,7 +213,7 @@ header {
   bottom: 50px !important;
 }
 .bannarslider .swiper-pagination .swiper-pagination-bullet{
-  background: #ff0000;
+  background: var(--bas-color);
 }
 .bannarslider .swiper-pagination  .swiper-pagination-bullet-active {
   width: 14px;
@@ -389,14 +390,14 @@ header {
 }
 
 .features .swiper-pagination-bullet {
-  background: #ff0000;
+  background: var(--bas-color);
   width: 13px;
   height: 5px;
   border-radius: 10px;
 }
 
 .features .swiper-pagination-bullet-active {
-  background: #ff0000;
+  background: var(--bas-color);
 
 }
 
@@ -462,12 +463,12 @@ header {
   transition: all 0.3s ease-in;
 }
 .banifit-item-container>div .readmore .read-btn {
-  background-color: #ff0000;
+  background-color: var(--bas-color);
   text-decoration: none;
   color: #fff;
   font-size: 18px;
   padding: 14px 34px;
-  border: 2px solid red;
+  border: 2px solid var(--bas-color);
   border-radius: 30px;
   font-family: var(--fontFamily);
 }
@@ -555,8 +556,8 @@ header {
 }
 
 .service-package .get-start-btn {
-  background-color: #ff0000;
-  border: 2px solid #ff0000;
+  background-color: var(--bas-color);
+  border: 2px solid var(--bas-color);
   border-radius: 30px;
   padding: 14px 34px;
   margin-top: 30px;
@@ -611,7 +612,7 @@ header {
   box-shadow: none;
 }
 .form-check-input:checked  {
-  background-color: #ff0000;
+  background-color: var(--bas-color);
   border: none;
 }
 .form-check-input:focus{
@@ -635,7 +636,7 @@ header {
   color: var(--textcolor);
 }
 .sign-btn:hover {
-  background-color: #ff0000;
+  background-color: var(--bas-color);
   color: #fff;
 }
 .sign-btn:hover a {
@@ -709,7 +710,7 @@ footer {
 }
 
 .footer-item li a:hover {
-  color: #ff0000;
+  color: var(--bas-color);
 }
 
 .footer-icon span i {
@@ -719,6 +720,23 @@ footer {
 }
 
 .footer-icon span i:hover {
-  color: #ff0000;
+  color: var(--bas-color);
 }
 /* end footer  */
+/* scroll top btn  */
+.scroll-top-btn {
+ text-decoration: none;
+ color: var(--bas-color);
+ position: fixed;
+ bottom: 40px;
+ right: 20px;
+ background: red;
+ padding: 10px;
+ border-radius: 12px;
+ transform: translateX(70px);
+ transition: all 1s ease-in-out;
+}
+.scroll-top-btn i {
+  font-size: 25px;
+  color: #fff;
+}

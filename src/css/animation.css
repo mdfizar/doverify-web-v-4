@@ -1,0 +1,41 @@
+/* fade up  */
+.animation {
+  transform: translateY(40px);
+  opacity: 0;
+  transition: opacity 0.2s, transform 1.5s;
+}
+.inview {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+/* fade left  */
+.fade-left {
+  transform: translateX(-40px);
+  opacity: 0;
+  transition: opacity 0.2s, transform 1s;
+}
+.fade-left-view {
+  opacity: 1;
+  transform: translateX(0px);
+}
+/* fade right  */
+.fade-right {
+  transform: translateX(40px);
+  opacity: 0;
+  transition: opacity 0.2s, transform 1s;
+}
+.fade-right-view {
+  transform: translateX(0px);
+  opacity: 1;
+}
+/* fade right  */
+/* .fade-zoom i {
+  transform: scale(1);
+  transition: opacity 0.2s, transform 1s;
+} */
+.fade-zoom-view {
+  opacity: 1;
+  transform: scale(1.2);
+  transition: all 1s ease-in;
+}
