@@ -105,7 +105,6 @@ window.addEventListener('scroll', () => {
     // Show the button
     scrollTopBtn.style.transform = "translateX(0)";
     scrollTopBtn.style.opacity = "1";
-    console.log("Scroll position is greater than 400px");
   } else {
     scrollTopBtn.style.transform = "translateX(70px)";
     scrollTopBtn.style.opacity = "0";

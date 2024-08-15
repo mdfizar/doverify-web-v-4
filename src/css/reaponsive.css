@@ -30,6 +30,11 @@
   .features .swiper-pagination{
     bottom: 0px;
   }
+  /* faq  */
+  .sm-scren {
+    width: 430px;
+    overflow-x: hidden;
+  }
   /* begin golobal */
   .section-heading  {
     font-size: 35px;
