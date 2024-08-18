@@ -103,7 +103,7 @@ header {
   background: #fff;
   border: 1px solid hsla(0,0%,100%,.2);
   box-shadow: 0 4px 30px rgba(0,0,0,.1);
-  padding: 25px 17px;
+  padding: 22px 17px;
   z-index: 99;
 }
 .header-container {
@@ -616,7 +616,7 @@ header {
   border: 0px;
   border: 1px solid rgb(183, 180, 180);
   border-radius: 7px;
-  padding: 15px 10px;
+  padding: 13px 10px;
   background: none;
  }
  .mycontainer .form-control:focus {
@@ -742,14 +742,14 @@ footer {
  color: var(--bas-color);
  position: fixed;
  bottom: 40px;
- right: 20px;
- background: red;
+ right: 2px;
+ background: #1e161640;
  padding: 10px;
- border-radius: 12px;
+ border-radius: 7px;
  transform: translateX(70px);
  transition: all 1s ease-in-out;
 }
 .scroll-top-btn i {
-  font-size: 25px;
+  font-size: 20px;
   color: #fff;
 }

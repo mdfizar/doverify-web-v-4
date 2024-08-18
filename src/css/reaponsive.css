@@ -1,5 +1,19 @@
 /* exta smal screen  */
 @media (min-width: 100px) and (max-width: 430px) {
+  /* begin golobal */
+  .section-heading  {
+    font-size: 35px;
+  }
+  .section-title {
+    font-size: 25px;
+  }
+  .center-text {
+    text-align: center;
+  }
+.margin-auto {
+  margin: auto;
+}
+  /* end golobal */
   /* header  */
   .header-container {
     top: 0px;
@@ -35,20 +49,18 @@
     width: 430px;
     overflow-x: hidden;
   }
-  /* begin golobal */
-  .section-heading  {
-    font-size: 35px;
-  }
-  .section-title {
-    font-size: 25px;
-  }
-  .center-text {
-    text-align: center;
-  }
-.margin-auto {
-  margin: auto;
-}
-  /* end golobal */
+  /* begin footer  */
+    .footer-content-alignment, .footer-content-alignment p,
+    .sm-text-center {
+      text-align: center;
+    }
+    .footer-item, .download-nfc-app {
+      justify-content: center;
+    }
+    .payment-get>div {
+      flex-wrap: wrap;
+    }
+  /* end footer  */
 }
 /* mobaile  */
 @media (min-width: 431px) and (max-width: 766px) {
