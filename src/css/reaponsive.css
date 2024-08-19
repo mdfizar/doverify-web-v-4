@@ -19,6 +19,9 @@
     top: 0px;
     border-radius: 0px;
   }
+  .Dropdown-item {
+    top: 50px;
+  }
   /* bannar  */
   .bannarslider img {
     height: 35vh;
@@ -59,6 +62,7 @@
     }
     .payment-get>div {
       flex-wrap: wrap;
+      margin-top: 3rem;
     }
   /* end footer  */
 }

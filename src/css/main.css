@@ -141,7 +141,7 @@ header {
 }
 .Dropdown-item {
   position: absolute;
-  top: 57px;
+  top: 54px;
   right: 0px;
   background-color: #ffffffff;
   border-radius: 0px 0px 7px 7px;
@@ -181,7 +181,7 @@ header {
 }
 .product-dropdown-item {
   position: absolute;
-  top: 68px;
+  top: 65px;
   background-color: #ffff;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   width: 200px;
@@ -194,7 +194,7 @@ header {
   transition: all 0.3s ease-in-out;
 }
 .product-dropdown:hover .product-dropdown-item {
-  height: 100px;
+  height: 150px;
 }
 .product-dropdown span i {
   transition: all 0.4s ease-in-out;
@@ -477,12 +477,12 @@ header {
 /* end facility section  */
 /* begin why chooase   */
   #why-choose-us .left> div {
-    align-items: center;
-    gap: 10px;
+    align-items: flex-start;
+    gap: 25px;
     margin-bottom: 10px;
   }
   #why-choose-us .left> div i {
-    font-size: 20px;
+    font-size: 2rem;
     color: var(--textcolor);
   }
   #why-choose-us .left> div h3 {
@@ -563,9 +563,9 @@ header {
 
 .service-package .get-start-btn {
   background-color: var(--bas-color);
-  border: 2px solid var(--bas-color);
-  border-radius: 30px;
-  padding: 14px 34px;
+  border: 1px solid var(--bas-color);
+  border-radius: 12px;
+  padding: 10px 25px;
   margin: 0px auto;
   margin-top: 30px;
   font-size: 18px;
@@ -636,20 +636,20 @@ header {
   text-decoration: none;
   text-align: center;
   color: var(--textcolor);
+  background-color: #f0f0f0;
   border: none;
   border-radius: 10px;
   font-size: 13px;
   font-weight: 500;
   padding: 12px 16px;
   transition: 0.4s;
-  text-transform: uppercase;
 }
 .sign-btn a {
   text-decoration: none;
   color: var(--textcolor);
 }
 .sign-btn:hover {
-  background-color: var(--bas-color);
+  background-color: #bfbfbf;
   color: #fff;
 }
 .sign-btn:hover a {
