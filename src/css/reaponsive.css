@@ -24,7 +24,7 @@
   }
   /* bannar  */
   .bannarslider img {
-    height: 35vh;
+    /* height: 35vh; */
   }
   .swiper-container::before {
     left: 125px;

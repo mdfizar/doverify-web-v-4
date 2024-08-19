@@ -206,12 +206,15 @@ header {
    --bs-btn-close-focus-shadow: ;
 }
 /* begin bannar section  */
+main {
+  padding-top: 80px;
+}
 .bannarslider img {
-  height: 80vh; 
+  /* height: 80vh;  */
   cursor: grab;
 }
 .bannarslider .swiper-pagination {
-  bottom: 50px !important;
+  bottom: 10px !important;
 }
 .bannarslider .swiper-pagination .swiper-pagination-bullet{
   background: var(--bas-color);
@@ -381,11 +384,12 @@ header {
 }
 .features .swiper-slide>div>div {
   overflow: hidden;
+  padding: 10px;
 }
 
 .features .swiper-pagination {
   position: absolute;
-  bottom: 10px;
+  bottom: 25px;
   text-align: center;
   width: 100%;
 }

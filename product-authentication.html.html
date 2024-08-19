@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>registration</title>
+  <title>Product Authentication</title>
   <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon.ico">
   <!-- bootstrap  -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -19,105 +19,106 @@
 
   <!-- ===== custom css ====== -->
   <link rel="stylesheet" href="src/css/main.css">
+  <link rel="stylesheet" href="src/css/animation.css">
   <link rel="stylesheet" href="src/css/reaponsive.css">
 </head>
 <body>
-    <!-- begin header -->
-    <header>
-      <div class="header-container">
-        <nav class="navbar navbar-expand-lg w-100 p-0 align-items-center">
-          <a class="navbar-brand p-0" href="index.html">
-            <img style="width: 120px;" src="src/images/logo.png" alt="doverify anti-counterfeit service">
-          </a>
-          <div class="d-flex align-items-center">
-            <div class="d-block d-lg-none">
-              <div class="Dropdwon d-flex align-items-center gap-1 pa1">
-                <i class="fa-solid fa-globe"></i>
-                ENG
-                <i class="fa-solid fa-angle-right"></i>
-                <div class="Dropdown-item">
-                  <ul class="p-0">
-                    <li><a href="#" onclick="event.preventDefault();">Bangla</a></li>
-                    <li><a href="#" onclick="event.preventDefault();">English</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <button class="tolggeicon d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-              <img src="src/images/menu.svg" alt="doverify">
-            </button>
-          </div>
-          <div class="container-fluid">
-            <div class="w-100">
-              <div class="d-flex align-items-center">
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <div class="product-dropdown">
-                        <a onclick=" event.preventDefault();" class="nav-link active" aria-current="page" href="#">
-                          Serveice <span><i style="margin-left: 5px;" class="fa-solid fa-angle-right"></i></span></a>
-                        <div class="product-dropdown-item">
-                          <div>
-                            <a class="nav-link" href="#">Brand Protection</a>
-                           <a class="nav-link" href="product-authentication.html">Product Authentication</a>
-                            <a class="nav-link" href="#">Custom Solutions</a>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="#ourfeatures">Features</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="#pricing">Pricing</a>
-                    </li>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="#faq">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="login.html">Login</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="registration.html">Registration</a>
-                    </li>
-                  </ul>
-                </div>
-                <div style="margin-right: 20px;" class="d-flex d-none d-lg-block">
-                  <div class="d-flex gap-3">
-            
-                    <div>
-                      <!-- <i class="fa-solid fa-user-plus"></i> -->
-                    </div>
-                  </div>
-                </div>
-                <div class="d-flex d-none d-lg-block">
-                  <a style="width: 165px;" class="btn-orange text-light text-start fw-bold " href="requesdemo.html">Request Demo <span><i class="fa-solid fa-arrow-right-long"></i></span>
-                  </a>
-                  <!-- <a  href="#"><i class="fa-solid fa-right-to-bracket"></i></a> -->
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="d-none d-lg-block">
+  <!-- begin header -->
+  <header>
+    <div class="header-container">
+      <nav class="navbar navbar-expand-lg w-100 p-0 align-items-center">
+        <a class="navbar-brand p-0" href="index.html">
+          <img style="width: 120px;" src="src/images/logo.png" alt="doverify anti-counterfeit service">
+        </a>
+        <div class="d-flex align-items-center">
+          <div class="d-block d-lg-none">
             <div class="Dropdwon d-flex align-items-center gap-1 pa1">
               <i class="fa-solid fa-globe"></i>
               ENG
-              <i style="margin-left: 5px;" class="fa-solid fa-angle-right"></i>
+              <i class="fa-solid fa-angle-right"></i>
               <div class="Dropdown-item">
                 <ul class="p-0">
-                  <li><a href="#" onclick="event.preventDefault();">English</a></li>
                   <li><a href="#" onclick="event.preventDefault();">Bangla</a></li>
+                  <li><a href="#" onclick="event.preventDefault();">English</a></li>
                 </ul>
               </div>
             </div>
           </div>
-        </nav>
-      </div>
-      <!-- begin offcanvas  -->
+          <button class="tolggeicon d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <img src="src/images/menu.svg" alt="doverify">
+          </button>
+        </div>
+        <div class="container-fluid">
+          <div class="w-100">
+            <div class="d-flex align-items-center">
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <div class="product-dropdown">
+                      <a onclick=" event.preventDefault();" class="nav-link active" aria-current="page" href="#">
+                        Serveice <span><i style="margin-left: 5px;" class="fa-solid fa-angle-right"></i></span></a>
+                      <div class="product-dropdown-item">
+                        <div>
+                          <a class="nav-link" href="brand-protection.html">Brand Protection</a>
+                         <a class="nav-link" href="product-authentication.html.html">Product Authentication</a>
+                          <a class="nav-link" href="custom-solution.html">Custom Solutions</a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#features">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#service-offer">Pricing</a>
+                  </li>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#faq">FAQ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="login.html">Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="registration.html">Registration</a>
+                  </li>
+                </ul>
+              </div>
+              <div style="margin-right: 20px;" class="d-flex d-none d-lg-block">
+                <div class="d-flex gap-3">
+          
+                  <div>
+                    <!-- <i class="fa-solid fa-user-plus"></i> -->
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex d-none d-lg-block">
+                <a style="width: 165px;" class="btn-orange text-light text-start fw-bold " href="requesdemo.html">Request Demo <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                </a>
+                <!-- <a  href="#"><i class="fa-solid fa-right-to-bracket"></i></a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-none d-lg-block">
+          <div class="Dropdwon d-flex align-items-center gap-1 pa1">
+            <i class="fa-solid fa-globe"></i>
+            ENG
+            <i style="margin-left: 5px;" class="fa-solid fa-angle-right"></i>
+            <div class="Dropdown-item">
+              <ul class="p-0">
+                <li><a href="#" onclick="event.preventDefault();">English</a></li>
+                <li><a href="#" onclick="event.preventDefault();">Bangla</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- begin offcanvas  -->
     <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
         <a class="navbar-brand p-0" href="index.html">
@@ -156,7 +157,7 @@
             <a class="nav-link" href="#">Pricing</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">FAQ</a>
+            <a class="nav-link" href="#faq">FAQ</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="login.html">Login</a>
@@ -164,126 +165,59 @@
           <li class="nav-item">
             <a class="nav-link" href="registration.html">Registration</a>
           </li>
-          
         </ul>
       </div>
     </div>
-      <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header">
-          <a class="navbar-brand p-0" href="index.html">
-            <img style="width: 120px;" src="src/images/logo.png" alt="doverify anti-counterfeit service">
-          </a>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">Home</a>
-            </li>
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button style="font-size: 17px;" class="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    Serveice
-                  </button>
-                </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                  <ul class="navbar-nav ps-3">
-                    <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="#">item</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="#">item</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-          </ul>
-        </div>
+    <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <a class="navbar-brand p-0" href="index.html">
+          <img style="width: 120px;" src="src/images/logo.png" alt="doverify anti-counterfeit service">
+        </a>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
-      <!-- end offcanvas  -->
-    </header>
-    <!-- end header  -->
-     <!-- begain main  -->
-     <main class="mt-5 pt-5">
-      <div class="container py-5">
-        <h3 class="section-heading mb-5 text-center">Contact with us</h3>
-        <div class="row">
-          <div class="col-lg-6">
-            <form action="">
-              <div class="container mycontainer">
-                <div class="row">
-                  <div class="col-xl-6">
-                    <label for="firstName" class="form-label">First Name*</label>
-                    <input type="text" class="form-control" id="firstName" aria-describedby="emailHelp" required>
-                  </div>
-                  <div class="col-xl-6">
-                    <label for="LastName" class="form-label">Last Name*</label>
-                    <input type="text" class="form-control" id="LastName" aria-describedby="emailHelp">
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-xl-6">
-                    <label for="email" class="form-label">E-mail*</label>
-                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-                  </div>
-                  <div class="col-xl-6">
-                    <label for="phone" class="form-label">Phone Number*</label>
-                    <input type="text" class="form-control" id="phone" aria-describedby="emailHelp">
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-xl-6">
-                    <label for="desigination" class="form-label">Desigination*</label>
-                    <input type="text" class="form-control" id="desigination" aria-describedby="emailHelp">
-                  </div>
-                  <div class="col-xl-6">
-                    <label for="company" class="form-label">Company Name*</label>
-                    <input type="text" class="form-control" id="company" aria-describedby="emailHelp">
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-xl-12">
-                    <label for="userName" class="form-label">Massege*</label>
-                    <input type="text" class="form-control" id="userName" aria-describedby="emailHelp">
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-xl-6">
-                    <button class="btn-orange text-center">Submit</button>
-                  </div>
-                </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button style="font-size: 17px;" class="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Serveice
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <ul class="navbar-nav ps-3">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">NFC Smart Card</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">NFC Business Card</a>
+                  </li>
+                </ul>
               </div>
-            </form>
-          </div>
-          <div class="col-lg-6">
-            <div class="row justify-content-center">
-              <div class="col-sm-6">
-                <h4 class="section-subtitle mb-4">General Information</h4>
-                <span>+880 1870-84 69 94</span>
-              </div>
-              <div class="col-sm-6">
-                <h4 class="section-subtitle mb-4">Customer Support</h4>
-                <span>+880 1870-84 69 94</span>
-              </div>
-            </div>
-            <div class="contact-img">
-              <img src="src/images/doverify-contact.svg" alt="doverify contact img">
             </div>
           </div>
-        </div>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+        </ul>
       </div>
-     </main>
-     <!-- end main  -->
-   <!-- begin footer  -->
-   <footer class="py-5">
+    </div>
+    <!-- end offcanvas  -->
+  </header>
+  <!-- end header  -->
+  <!-- begin main  -->
+   <main>
+    <h1>product Authentication</h1>
+   </main>
+  <!-- end main  -->
+  <!-- begin footer  -->
+  <footer class="py-5">
     <div class="footer-border"></div>
     <div class="container">
       <div class="row align-items-center">
@@ -292,7 +226,7 @@
         </div>
         <div class="col-12 col-md-5">
           <ul class="footer-item">
-            <li><a href="#">About</a></li>
+            <li><a href="">About</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
             |
@@ -309,7 +243,7 @@
         <div class="d-flex flex-column flex-lg-row">
           <div>
             <h3 class="sm-text-center">Download doverify App</h3>
-           <div class="download-nfc-app">
+            <div class="download-nfc-app">
             <div class="playstore">
               <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="140" height="42" viewBox="0 0 157.2 46.4">
                 <title>Get doverify app on Google Play</title>
@@ -367,7 +301,7 @@
             </g>
               </svg>
             </div>
-           </div>
+            </div>
           </div>
           <div class="payment-get flex-grow-1 w-100">
             <div class="d-flex justify-content-center justify-content-lg-end w-100">
