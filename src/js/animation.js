@@ -96,18 +96,3 @@ function scrollAnimationZoom(func, wait) {
  window.addEventListener('scroll',scrollAnimationZoom(handleZoom));
  window.addEventListener('load', handleZoom);
 
-//  scroll top btn 
-var scrollTopBtn = document.querySelector(".scroll-top-btn");
-
-window.addEventListener('scroll', () => {
-  var bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-  if (bodyScrollTop > 600) {
-    // Show the button
-    scrollTopBtn.style.transform = "translateX(0)";
-    scrollTopBtn.style.opacity = "1";
-  } else {
-    scrollTopBtn.style.transform = "translateX(70px)";
-    scrollTopBtn.style.opacity = "0";
-  }
-
-});

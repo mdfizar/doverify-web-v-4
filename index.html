@@ -64,7 +64,7 @@
                         <div>
                           <a class="nav-link" href="brand-protection.html">Brand Protection</a>
                          <a class="nav-link" href="product-authentication.html.html">Product Authentication</a>
-                          <a class="nav-link" href="#">Custom Solutions</a>
+                          <a class="nav-link" href="custom-solution.html">Custom Solutions</a>
                         </div>
                       </div>
                     </div>
@@ -141,10 +141,13 @@
               <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                 <ul class="navbar-nav ps-3">
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">NFC Smart Card</a>
+                    <a class="nav-link" href="brand-protection.html">Brand Protection</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">NFC Business Card</a>
+                    <a class="nav-link" aria-current="page" href="product-authentication.html.html">Product Authentication</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="custom-solution.html">Custom Solutions</a>
                   </li>
                 </ul>
               </div>
@@ -190,10 +193,13 @@
               <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                 <ul class="navbar-nav ps-3">
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">NFC Smart Card</a>
+                    <a class="nav-link" href="brand-protection.html">Brand Protection</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">NFC Business Card</a>
+                    <a class="nav-link" aria-current="page" href="#">Product Authentication</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Custom Solutions</a>
                   </li>
                 </ul>
               </div>
@@ -353,7 +359,7 @@
           <h3 class="section-heading mb-5 animation">Anti-Counterfeit Service</h3>
             <div class="row row-gap-5">
                 <div class="col-md-6">
-                    <h1 class="section-title">Protect Your Products with Our Anti-Counterfeit Service</h1>
+                    <h1 class="section-subheading pb-4">Protect Your Products with Our Anti-Counterfeit Service</h1>
                     <p class="section-subtitle">Ensure the authenticity of your products and safeguard your brand with our cutting-edge anti-counterfeit solutions.</p>
                     <ul class="list-unstyled ">
                         <li><i class="fas fa-check-circle"></i>Real-time verification</li>
@@ -756,6 +762,23 @@
    <a class="scroll-top-btn" href="#">
     <i class="fa-solid fa-angles-up"></i>
    </a>
+   <script>
+        //  scroll top btn 
+    var scrollTopBtn = document.querySelector(".scroll-top-btn");
+
+    window.addEventListener('scroll', () => {
+      var bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      if (bodyScrollTop > 600) {
+        // Show the button
+        scrollTopBtn.style.transform = "translateX(0)";
+        scrollTopBtn.style.opacity = "1";
+      } else {
+        scrollTopBtn.style.transform = "translateX(70px)";
+        scrollTopBtn.style.opacity = "0";
+      }
+
+    });
+   </script>
   <!-- end main  -->
   <!-- begin footer  -->
    <footer class="py-5">
