@@ -17,9 +17,12 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+/* hide the overflow for scroll effect  */
 .container {
   overflow: hidden;
 }
+/* hide the overflow for scroll effect  */
+
 /*read more button desing ====== */
 .read-more-btn {
   display: flex;
@@ -842,6 +845,7 @@ footer {
  border-radius: 7px;
  transform: translateX(70px);
  transition: all 1s ease-in-out;
+ z-index: 100;
 }
 .scroll-top-btn i {
   font-size: 20px;

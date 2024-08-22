@@ -23,8 +23,25 @@
     top: 50px;
   }
   /* bannar  */
-
-  .swiper-container::before {
+  .bannarslider .bannar-title-container> div {
+    padding: 1rem;
+    padding-top: 0px;
+  }
+  .bannarslider .bannar-title-container h3 {
+    font-size: 36px;
+    line-height: normal;
+    text-align: center;
+  }
+  .bannarslider .bannar-title-container p {
+    margin: 0px;
+    text-align: center;
+  }
+  .bannarslider .bannar-title-container .oder-btn{
+    display: flex;
+    width: fit-content;
+    margin: 0px auto;
+  }
+  /* .swiper-container::before {
     left: 125px;
     top: -16%;
     width: 180px;
@@ -38,17 +55,13 @@
   }
   .swiper-container .swiper-button-next {
     right: 0px !important;
-  }
+  } */
+  /* end bannar  */
   #overview {
     margin-top: 0px;
   }
   .features .swiper-pagination{
     bottom: 0px;
-  }
-  /* faq  */
-  .sm-scren {
-    width: 430px;
-    overflow-x: hidden;
   }
   /* begin footer  */
     .footer-content-alignment, .footer-content-alignment p,
