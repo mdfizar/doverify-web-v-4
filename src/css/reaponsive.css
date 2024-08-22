@@ -92,3 +92,9 @@
     left: 36%;
   }
 }
+/* desktop */
+@media (min-width: 992px)  {
+  main{
+    padding-top: 76px;
+  }
+}

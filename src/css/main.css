@@ -4,12 +4,14 @@
   --textcolor:#293a4e;
   --pragraph-fontSize: 18px;
   --fontFamily:roboto, sans-serif;
+  --robotofont: roboto;
   --description-text: 16px;
 }
 body {
   padding: 0px;
   margin:0px;
   font-family: var(--fontFamily);
+  color: var(--textcolor);
   font-style: normal;
   background-color: #fff9f9;
   overflow-x: hidden;
@@ -36,7 +38,7 @@ body {
   border-radius: 7px;
   padding: 17px 13px;
   gap: 10px;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 700;
   text-decoration: none;
 }
@@ -215,10 +217,59 @@ header {
 main {
   padding-top: 80px;
 }
-.bannarslider img {
-  /* height: 80vh;  */
-  cursor: grab;
+.bannarslider {
+  background-color: #fff;
 }
+.bannarslider .bannar-title-container {
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 0px !important;
+}
+.bannarslider .bannar-title-container> div {
+  padding: 2rem;
+}
+.bannarslider .bannar-title-container h3{
+  font-size: 55px;
+  font-family: var(--robotofont);
+  color: var(--textcolor);
+  font-weight: 700;
+  line-height: 65px;
+}
+.bannarslider .bannar-title-container p {
+  padding: 10px 0px;
+  font-family: var(--robotofont);
+  font-size: 20px;
+  color: var(--textcolor);
+  max-width: 529px;
+}
+.bannarslider .bannar-title-container  .oder-btn {
+  border: none;
+  background-color: #ff0000;
+  color: #fff;
+  font-size: 14px;
+  font-family: var(--robotofont);
+  padding: 19px 13px;
+  margin-top: 16px;
+  border-radius: 8px;
+  font-weight: 700;
+  display: inline-block;
+  text-decoration: none;
+}
+.bannarslider .bannar-title-container  .oder-btn span {
+  margin-left: 10px;
+  transition: 0.6s ease-in-out;
+}
+.bannarslider .bannar-title-container  .oder-btn:hover span {
+  margin-left: 40px;
+}
+.bannarslider .bannar-img-container {
+  padding-left: 0px !important;
+}
+.bannarslider .bannar-img-container img {
+  width: 100%;
+  max-height: 400px;
+}
+
 .bannarslider .swiper-pagination {
   bottom: 10px !important;
 }
@@ -230,6 +281,8 @@ main {
   height: 6px;
   border-radius: 20px;
 }
+
+
 /* end bannar slider  */
 .swiper-container {
   position: relative;
