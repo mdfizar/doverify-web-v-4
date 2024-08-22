@@ -17,6 +17,9 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+.container {
+  overflow: hidden;
+}
 /*read more button desing ====== */
 .read-more-btn {
   display: flex;
@@ -378,8 +381,9 @@ main {
 }
 .event-news-slider .swiper-button-next::after,
 .event-news-slider .swiper-button-prev::after {
-  color: #ff0000 !important;
-  font-size: 25px !important;
+  font-weight: 700;
+  color: #293a4e !important;
+  font-size: 13px !important;
 }
 /* end event and news slider  */
 /* begin overview */
