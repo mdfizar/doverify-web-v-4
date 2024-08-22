@@ -55,6 +55,9 @@
     right: 0px !important;
   } */
   /* end bannar  */
+  .anticounterfeit-prosess .right  {
+    border-left: 0px;
+  }
   #overview {
     margin-top: 0px;
   }
