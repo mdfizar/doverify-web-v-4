@@ -309,7 +309,7 @@ main {
 .scanner img {
   width: 100%;
   padding: 10px;
-  border: 3px solid rgba(137, 201, 145, 0.907);
+  border: 3px solid rgb(21 207 107);
 }
 .scanner p {
   font-size: 20px;
