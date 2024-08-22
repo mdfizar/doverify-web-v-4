@@ -288,6 +288,7 @@ main {
 /* anti counterfeit prosess  */
 .anticounterfeit-prosess {
   border: 1px solid red;
+  padding: 30px;
 }
 .anticounterfeit-prosess .left h4{
   font-size: 20px;
@@ -391,6 +392,21 @@ main {
 .swiper-container .swiper-button-next {
   right: -28px !important;
 }
+/* begin company rank  */
+.compnay-rank .protected,
+.compnay-rank .company,
+.compnay-rank .award {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.compnay-rank .protected {
+  background-image: url("../images/protected-bg.svg");
+  background-size: cover;
+}
+/* end company rank  */
 /* begin event and news slider  */
 .event-news {
   background-color: #f8f0f0;

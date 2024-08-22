@@ -58,6 +58,14 @@
   .anticounterfeit-prosess .right  {
     border-left: 0px;
   }
+  .scanner {
+    width: 140px;
+    height: 100%;
+  }
+  .copy-scanner {
+    width: 140px;
+    height: 100%;
+  }
   #overview {
     margin-top: 0px;
   }
