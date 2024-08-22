@@ -30,11 +30,9 @@
   .bannarslider .bannar-title-container h3 {
     font-size: 36px;
     line-height: normal;
-    text-align: center;
   }
   .bannarslider .bannar-title-container p {
     margin: 0px;
-    text-align: center;
   }
   .bannarslider .bannar-title-container .oder-btn{
     display: flex;
