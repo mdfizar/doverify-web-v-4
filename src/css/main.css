@@ -286,159 +286,62 @@ main {
 
 /* end bannar slider  */
 /* anti counterfeit prosess  */
-.anticounterfeit-prosess {
-  border: 1px solid red;
-  padding: 30px;
+.anticounterfeit-prosess > div {
+ border: 1px solid red;
 }
-.anticounterfeit-prosess .left h4{
-  font-size: 20px;
-  color: var(--textcolor);
-  font-family: var(--robotofont);
-}
-.anticounterfeit-prosess .left p {
-  font-size: 16px;
-  font-family: var(--robotofont);
-  color: var(--textcolor);
-}
-.anticounterfeit-prosess .right {
-  border-left: 1px solid red;
-}
-.scanner  {
-  width: 160px;
-}
-.scanner img {
-  width: 100%;
-  padding: 10px;
-  border: 3px solid rgb(21 207 107);
-}
-.scanner p {
-  font-size: 20px;
-  font-family: var(--robotofont);
-  color: var(--textcolor);
-}
-.copy-scanner {
-  width: 160px;
-}
-.copy-scanner img {
-  width: 100%;
-  padding: 10px;
-  border: 3px solid #ff0000;
-}
-.swiper-container {
-  position: relative;
-  z-index: 1;
-}
-.swiper-container::before {
-  content: '';
-  position: absolute;
-  left: 41%;
-  top: -24%;
-  height: 205px;
-  width: 205px;
-  background: #fff;
-  border-radius: 50%;
-  box-shadow: 0 4px 80px rgba(242,79,65,.17);
-}
-.swiper-container .swiper, .swiper-wrapper {
-  position: static;
-  align-items: center;
-}
-.swiper-container .swiper-slide {
-  display: flex;
-  justify-content: center;
-}
-.swiper-container .slide-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  text-align: center;
-  font-family: sans-serif;
-  background: linear-gradient(45deg, #f24f41, #f58220);
-  -webkit-background-clip: text;
-  background-clip: text;
-} 
-.swiper-container .slide-item img {
-  width: 40px;
-}
-.swiper-container .slide-item  {
-  filter: hue-rotate(235deg) brightness(.55) invert(.33);
-}
-.swiper-container .swiper-slide-active .slide-item  {
-  filter: none;
-}
-.swiper-container .swiper-slide-active .slide-item img {
-  width: 78px;
-}
-.swiper-container .swiper-slide-active .slide-item  {
-  font-size: 18px;
-  color: red;
-  width: 100px;
-}
-.swiper-container .custom-arrow:after{
-  content: '';
-}
-.swiper-container .custom-arrow {
+.share-detail span {
   width: 50px;
   height: 50px;
-  color: #ff0000;
-} 
-.swiper-container .custom-arrow  svg {
-  width: 28px;
-}
-.swiper-container .swiper-button-prev {
-  left: -30px !important;
-}
-.swiper-container .swiper-button-next {
-  right: -28px !important;
-}
-/* begin company rank  */
-.compnay-rank .protected,
-.compnay-rank .company,
-.compnay-rank .award {
-  width: 300px;
-  height: 300px;
+  background-color: #f24f41;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 50%;
+  font-size: 18px;
 }
-.compnay-rank .protected {
-  background-image: url("../images/protected-bg.svg");
-  background-size: cover;
-}
-/* end company rank  */
-/* begin event and news slider  */
-.event-news {
-  background-color: #f8f0f0;
-}
-.event-news-slider .swiper-slide {
+.protect span {
+  width: 50px;
+  height: 50px;
+  background-color: #48d288;
+  color: #fff;
   display: flex;
+  align-items: center;
   justify-content: center;
-  align-items: start;
-  gap: 10px;
-  flex-wrap: wrap;
+  border-radius: 50%;
+  font-size: 18px;
 }
-.event-news-slider .event-news-item {
-  width: 70%;
+.print span {
+  width: 50px;
+  height: 50px;
+  background-color: #7171e3;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 18px;
 }
-.event-news-slider .event-news-item h5 {
-  font-family: var(--fontFamily);
-  font-weight: 500;
-  font-size: 20px;
-  color: var(--textcolor);
+.authenticate span{
+  width: 50px;
+  height: 50px;
+  background-color: #b550c5;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 18px;
 }
-.event-news-slider .event-news-item p {
-  font-family: roboto;
-  font-weight: 400;
-  font-size: var(--description-text);
+.product-img {
+  overflow: hidden;
 }
-.event-news-slider .swiper-button-next::after,
-.event-news-slider .swiper-button-prev::after {
-  font-weight: 700;
-  color: #293a4e !important;
-  font-size: 13px !important;
+.product-img img {
+  transition: all 0.5s ease-in-out;
 }
-/* end event and news slider  */
+.product-img:hover img {
+  transform: scale(1.2);
+}
 /* begin overview */
 #overview  ul li {
   display: flex;
