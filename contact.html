@@ -11,8 +11,8 @@
 
    <!--======== swiper css ======= -->
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-   <!-- ======== aos css ======= -->
-
+   <!-- telinput -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
    <!-- begin google fonts  -->
    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
    <!-- end google fonts  -->
@@ -53,36 +53,30 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                   <ul class="navbar-nav">
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      <a class="nav-link active" aria-current="page" href="index.html">Why Doverify</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">About Us</a>
                     </li>
                     <li class="nav-item">
                       <div class="product-dropdown">
                         <a onclick=" event.preventDefault();" class="nav-link active" aria-current="page" href="#">
-                          Serveice <span><i style="margin-left: 5px;" class="fa-solid fa-angle-right"></i></span></a>
+                          Product <span><i style="margin-left: 5px;" class="fa-solid fa-angle-right"></i></span></a>
                         <div class="product-dropdown-item">
                           <div>
-                            <a class="nav-link" href="#">Brand Protection</a>
-                           <a class="nav-link" href="product-authentication.html">Product Authentication</a>
-                            <a class="nav-link" href="#">Custom Solutions</a>
+                            <a class="nav-link" href="brand-protection.html">Brand Protection</a>
+                           <a class="nav-link" href="product-authentication.html.html">Product Authentication</a>
+                            <a class="nav-link" href="custom-solution.html">Custom Solutions</a>
                           </div>
                         </div>
                       </div>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="#ourfeatures">Features</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="#pricing">Pricing</a>
+                      <a class="nav-link" aria-current="page" href="#service-offer">Pricing</a>
                     </li>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="#faq">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="login.html">Login</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="registration.html">Registration</a>
+                      <a class="nav-link" aria-current="page" href="contact.html">Contact Us</a>
                     </li>
                   </ul>
                 </div>
@@ -118,59 +112,6 @@
         </nav>
       </div>
       <!-- begin offcanvas  -->
-    <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <a class="navbar-brand p-0" href="index.html">
-          <img style="width: 120px;" src="src/images/logo.png" alt="doverify anti-counterfeit service">
-        </a>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">Home</a>
-          </li>
-          <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button style="font-size: 17px;" class="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                  Serveice
-                </button>
-              </h2>
-              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <ul class="navbar-nav ps-3">
-                  <li class="nav-item">
-                    <a class="nav-link" href="brand-protection.html">Brand Protection</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="product-authentication.html.html">Product Authentication</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="custom-solution.html">Custom Solutions</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">FAQ</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="login.html">Login</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="registration.html">Registration</a>
-          </li>
-          
-        </ul>
-      </div>
-    </div>
       <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
           <a class="navbar-brand p-0" href="index.html">
@@ -193,10 +134,65 @@
                 <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                   <ul class="navbar-nav ps-3">
                     <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="#">item</a>
+                      <a class="nav-link" href="brand-protection.html">Brand Protection</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="#">item</a>
+                      <a class="nav-link" aria-current="page" href="product-authentication.html.html">Product Authentication</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="custom-solution.html">Custom Solutions</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="registration.html">Registration</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <a class="navbar-brand p-0" href="index.html">
+            <img style="width: 120px;" src="src/images/logo.png" alt="doverify anti-counterfeit service">
+          </a>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button style="font-size: 17px;" class="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Serveice
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <ul class="navbar-nav ps-3">
+                    <li class="nav-item">
+                      <a class="nav-link" href="brand-protection.html">Brand Protection</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#">Product Authentication</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#">Custom Solutions</a>
                     </li>
                   </ul>
                 </div>
@@ -217,69 +213,47 @@
      <!-- begain main  -->
      <main class="mt-5 pt-5">
       <div class="container py-5">
-        <h3 class="section-heading mb-5 text-center">Contact with us</h3>
         <div class="row">
           <div class="col-lg-6">
-            <form action="">
+           <h3 class="section-heading text-start pb-4">Please provide your company or organization details</h3>
+           <p class="section-title">
+            Our solution is designed for all industries. We aim to bring security to everyone, everywhere in the world.
+           </p>
+            <div class="contact-img">
+              <img src="src/images/doverify-contact.svg" alt="doverify contact img">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <form action="" class="phoneinput">
               <div class="container mycontainer">
-                <div class="row">
-                  <div class="col-xl-6">
-                    <label for="firstName" class="form-label">First Name*</label>
-                    <input type="text" class="form-control" id="firstName" aria-describedby="emailHelp" required>
-                  </div>
-                  <div class="col-xl-6">
-                    <label for="LastName" class="form-label">Last Name*</label>
-                    <input type="text" class="form-control" id="LastName" aria-describedby="emailHelp">
-                  </div>
+                <div>
+                  <label for="name" class="form-label">Full Name*</label>
+                  <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
                 </div>
-                <div class="row">
-                  <div class="col-xl-6">
-                    <label for="email" class="form-label">E-mail*</label>
-                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-                  </div>
-                  <div class="col-xl-6">
-                    <label for="phone" class="form-label">Phone Number*</label>
-                    <input type="text" class="form-control" id="phone" aria-describedby="emailHelp">
-                  </div>
+                <div>
+                  <label for="email" class="form-label">E-mail*</label>
+                  <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
                 </div>
-                <div class="row">
-                  <div class="col-xl-6">
-                    <label for="desigination" class="form-label">Desigination*</label>
-                    <input type="text" class="form-control" id="desigination" aria-describedby="emailHelp">
-                  </div>
-                  <div class="col-xl-6">
-                    <label for="company" class="form-label">Company Name*</label>
+                <div>
+                  <label for="email" class="form-label">Phone Number*</label><br>
+                  <input type="tel" class="form-control" id="phone" name="phone" aria-describedby="emailHelp" required>
+                </div>
+                <div>
+                  <label for="company" class="form-label">Company Name*</label>
                     <input type="text" class="form-control" id="company" aria-describedby="emailHelp">
-                  </div>
                 </div>
-                <div class="row">
-                  <div class="col-xl-12">
-                    <label for="userName" class="form-label">Massege*</label>
-                    <input type="text" class="form-control" id="userName" aria-describedby="emailHelp">
-                  </div>
+                <div>
+                  <label for="userName" class="form-label">Massege*</label>
+                    <input style="height: 130px;" type="text" class="form-control" id="userName" aria-describedby="emailHelp">
                 </div>
                 <div class="row">
                   <div class="col-xl-6">
                     <button class="btn-orange text-center">Submit</button>
                   </div>
                 </div>
+                </div>
               </div>
             </form>
-          </div>
-          <div class="col-lg-6">
-            <div class="row justify-content-center">
-              <div class="col-sm-6">
-                <h4 class="section-subtitle mb-4">General Information</h4>
-                <span>+880 1870-84 69 94</span>
-              </div>
-              <div class="col-sm-6">
-                <h4 class="section-subtitle mb-4">Customer Support</h4>
-                <span>+880 1870-84 69 94</span>
-              </div>
-            </div>
-            <div class="contact-img">
-              <img src="src/images/doverify-contact.svg" alt="doverify contact img">
-            </div>
           </div>
         </div>
       </div>
@@ -411,6 +385,41 @@
     </div>
   </footer>
   <!-- end footer  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.min.js"></script>
+  <script>
+    const input = document.querySelector("#phone");
+    const iti = window.intlTelInput(input, {
+            initialCountry: "us", // Set a default country code
+            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.min.js", // Ensure utilsScript is included
+        });
+
+    // Function to update the placeholder
+    function updatePlaceholder() {
+        const countryData = iti.getSelectedCountryData();
+        const exampleNumber = iti.getNumber(intlTelInputUtils.numberFormat.NATIONAL); // Get the example number
+        input.placeholder = `${countryData.dialCode} ${exampleNumber}`;
+    }
+
+    // Initialize placeholder
+    updatePlaceholder();
+
+    // Update placeholder on country change
+    iti.setCountry(iti.getSelectedCountryData().iso2); // Set initial country
+    input.addEventListener('countrychange', updatePlaceholder);
+
+    // Form submission validation
+    document.querySelector('.phoneinput').addEventListener('submit', function(event) {
+        if (!iti.isValidNumber()) {
+            event.preventDefault(); // Prevent form submission
+            document.getElementById('error').style.display = 'inline';
+            document.getElementById('valid').style.display = 'none';
+        } else {
+            document.getElementById('error').style.display = 'none';
+            document.getElementById('valid').style.display = 'inline';
+        }
+    });
+</script>
   <!--===== bootstrap js=====  -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <!-- ======= swiper js ======= -->

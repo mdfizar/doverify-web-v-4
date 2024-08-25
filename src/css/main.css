@@ -10,7 +10,7 @@
 body {
   padding: 0px;
   margin:0px;
-  font-family: var(--fontFamily);
+  font-family: var(--robotofont);
   color: var(--textcolor);
   font-style: normal;
   background-color: #fff9f9;
@@ -96,7 +96,7 @@ body {
   background-color: #ff0000;
 } */
 .section-title {
-  font-family: var(--fontFamily);
+  font-family: var(--robotofont);
   font-size: 20px;
   font-weight: 500;
   color: var(--textcolor);
@@ -341,6 +341,15 @@ main {
 }
 .product-img:hover img {
   transform: scale(1.2);
+}
+.simple-impliment >div >div h4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--textcolor);
+}
+.simple-impliment >div >div p {
+  font-size: 16px;
+  color: var(--textcolor);
 }
 /* begin overview */
 #overview  ul li {
@@ -626,8 +635,7 @@ main {
  .mycontainer {
   max-width: 700px;
  }
- .mycontainer .row {
-  row-gap: 20px;
+ .mycontainer >div {
   margin-bottom: 20px;
  }
  .mycontainer .form-label {
@@ -656,6 +664,9 @@ main {
 .form-check-input:focus{
   box-shadow: none;
   border-color: var(--textcolor);
+}
+.iti {
+  width: 100% !important;
 }
 .sign-btn {
   text-decoration: none;
