@@ -702,6 +702,30 @@ main {
   transition: 0.6s ease-in-out;
 }
 /* end registration  */
+/* begin request demo  */
+.requestdeom {
+  row-gap: 15px;
+}
+.requestdeom .form-select {
+  padding: 12px 10px;
+}
+.requestdeom .form-select:focus{
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: none;
+}
+.requestdeom .form-control {
+  padding: 12px 10px
+}
+.requestdeom .form-control:focus {
+  box-shadow: none;
+}
+.requestdeom .form-label {
+  font-size: 18px;
+  margin-left: 5px;
+  color: var(--textcolor);
+}
+/* end request demo  */
 /* begin brand protection  */
 /*begin bannar section  */
  .bannar-img  img{

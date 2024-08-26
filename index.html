@@ -812,22 +812,6 @@
    <a class="scroll-top-btn" href="#">
     <i class="fa-solid fa-angles-up"></i>
    </a>
-   <!-- begin scroll top button  -->
-   <script>
-    var scrollTopBtn = document.querySelector(".scroll-top-btn");
-    window.addEventListener('scroll', () => {
-      var bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-      if (bodyScrollTop > 600) {
-        // Show the button
-        scrollTopBtn.style.transform = "translateX(0)";
-        scrollTopBtn.style.opacity = "1";
-      } else {
-        scrollTopBtn.style.transform = "translateX(70px)";
-        scrollTopBtn.style.opacity = "0";
-      }
-    });
-   </script>
-  <!-- end scroll top button  -->
   <!-- end main  -->
   <!-- begin footer  -->
    <footer class="py-5">
@@ -962,6 +946,22 @@
   <!-- aos  -->
  
   <!-- ==== main js ====== -->
+      <!-- begin scroll top button  -->
+      <script>
+        var scrollTopBtn = document.querySelector(".scroll-top-btn");
+        window.addEventListener('scroll', () => {
+          var bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+          if (bodyScrollTop > 600) {
+            // Show the button
+            scrollTopBtn.style.transform = "translateX(0)";
+            scrollTopBtn.style.opacity = "1";
+          } else {
+            scrollTopBtn.style.transform = "translateX(70px)";
+            scrollTopBtn.style.opacity = "0";
+          }
+        });
+       </script>
+      <!-- end scroll top button  -->
   <script src="src/js/main.js"></script>
   <script src="src/js/animation.js"></script>
 </body>
