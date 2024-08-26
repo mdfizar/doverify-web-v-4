@@ -3,61 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phone Input with intl-tel-input</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
+    <title>Styled Text with JavaScript</title>
     <style>
-        .error {
+        .highlight-red {
             color: red;
-            display: none;
         }
-        .valid {
-            color: green;
-            display: none;
+        .highlight-blue {
+            color: blue;
         }
     </style>
 </head>
 <body>
-    <form id="phoneForm">
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" required>
-        <span id="error" class="error">Invalid phone number.</span>
-        <span id="valid" class="valid">Phone number is valid!</span>
-        <button type="submit">Submit</button>
-    </form>
+    <h3 id="dynamicText">I am an example of an h3 tag<br>with ten words here now</h3>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.min.js"></script>
     <script>
-        const input = document.querySelector("#phone");
-        const iti = window.intlTelInput(input, {
-            initialCountry: "us", // Set a default country code
-            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.min.js", // Ensure utilsScript is included
-        });
+        function colorText() {
+            var element = document.getElementById('dynamicText');
+            var text = element.innerHTML;
+            var newHtml = '';
 
-        // Function to update the placeholder
-        function updatePlaceholder() {
-            const countryData = iti.getSelectedCountryData();
-            const exampleNumber = iti.getNumber(intlTelInputUtils.numberFormat.INTERNATIONAL); // Get the full international format number
-            input.placeholder = `${countryData.dialCode} ${exampleNumber.replace(/^\+\d+\s/, '')}`; // Format the placeholder to include the country code
+            for (var i = 0; i < text.length; i++) {
+                var char = text.charAt(i);
+                // Apply different colors based on the character position
+                if (i >= 10 && i < 18) {
+                    newHtml += '<span style="color: red;">' + char + '</span>';
+                } else if (i >= 25 && i < 31) {
+                    newHtml += '<span style="color: blue;">' + char + '</span>';
+                } else {
+                    newHtml += char;
+                }
+            }
+
+            element.innerHTML = newHtml;
         }
 
-        // Initialize placeholder
-        updatePlaceholder();
-
-        // Update placeholder on country change
-        input.addEventListener('countrychange', updatePlaceholder);
-
-        // Form submission validation
-        document.getElementById('phoneForm').addEventListener('submit', function(event) {
-            if (!iti.isValidNumber()) {
-                event.preventDefault(); // Prevent form submission
-                document.getElementById('error').style.display = 'inline';
-                document.getElementById('valid').style.display = 'none';
-            } else {
-                document.getElementById('error').style.display = 'none';
-                document.getElementById('valid').style.display = 'inline';
-            }
-        });
+        colorText();
     </script>
 </body>
 </html>
