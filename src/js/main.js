@@ -1,10 +1,11 @@
 // bannar slider 
 var swiper = new Swiper(".bannarslider", {
   loop: true,
-  autoplay: {
-    delay: 4000,
-    disableOnInteraction: false,
-  },
+ 
+  // autoplay: {
+  //   delay: 4000,
+  //   disableOnInteraction: false,
+  // },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,

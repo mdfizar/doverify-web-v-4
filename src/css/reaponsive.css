@@ -23,6 +23,9 @@
     top: 50px;
   }
   /* bannar  */
+  .banner-container {
+    padding: 30px 30px;
+  }
   .bannarslider .bannar-title-container> div {
     padding: 1rem;
     padding-top: 0px;
@@ -39,21 +42,6 @@
     width: fit-content;
     margin: 0px auto;
   }
-  /* .swiper-container::before {
-    left: 125px;
-    top: -16%;
-    width: 180px;
-    height: 180px;
-  }
-  .slide-item{
-    width: 100px;
-  }
-  .swiper-container .swiper-button-prev {
-    left: 0px !important;
-  }
-  .swiper-container .swiper-button-next {
-    right: 0px !important;
-  } */
   /* end bannar  */
   .anticounterfeit-prosess .right  {
     border-left: 0px;
